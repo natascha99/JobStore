@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JobStore.com Home Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        <!--HEADER-->
+        <section class="header">
+            <nav>
+                <a href="HomePage.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">JOBS CATEGORY</a></li>
+                        <li><a href="">COMPANIES</a></li>
+                        <li><a href="">RESOURCE</a></li>
+                        <li><a href="">BLOG</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <form class="search">
+                    <input type="text" placeholder="Search jobs by keyword or job title here">
+                    <a href="" class="hero-btn">Search</a>&nbsp;&nbsp;<a href="" class="hero-btn">Sign Up For Free</a>
+                </form>
+            </div>
+        </section>
+        <!--END HEADER-->
+        <!--TRENDING JOBS-->
+        <section class="trending-jobs">
+            <h1>TRENDING JOBS IN MALAYSIA</h1>
+            <p>Discover more jobs in Malayisa</p>
+            <div class="row">
+                <div class="trending-col">
+                    <h4>Key Account Executive - Sale</h4>
+                    <p>Meru, Klang</p>
+                    <a href="">Details</a>
+                </div>
+                <div class="trending-col">
+                    <h4>Costing Executive</h4>
+                    <p>Meru, Klang</p>
+                    <a href="">Details</a>
+                </div>
+                <div class="trending-col">
+                    <h4>Architecture Supervisor</h4>
+                    <p>Kuala Lumpur</p>
+                    <a href="">Details</a>
+                </div>
+            </div>
+        </section>
+        <!--END TRENDING JOBS-->
+        <hr>
+        <!--FEATURED EMPLOYERS-->
+        <section class="featured-emp">
+            <h1>FEATURED EMPLOYERS</h1>
+            <p>Check out the employers who's hiring now!</p>
+            <div class="row">
+                <div class="featured-col">
+                    <img src="images/aeon.jpg">
+                    <h4>AEON Credit Service(M) Berhad</h4>
+                    <p>No. 8, Level 18, UOA Corporate Tower, Avenue 10, The Vertical Bangsar South City, Jalan Kerinchi, 59200 Kuala Lumpur</p>
+                    <a href="" class="apply-btn">Apply Jobs</a>
+                </div>
+                <div class="featured-col">
+                    <img src="images/AllianceSteel.png">
+                    <h4>Alliance Steel (M) Sdn Bhd</h4><br>
+                    <p>No. 8, Level 18, UOA Corporate Tower, Avenue 10, The Vertical Bangsar South City, Jalan Kerinchi, 59200 Kuala Lumpur</p>
+                    <a href="" class="apply-btn">Apply Jobs</a>
+                </div>
+                <div class="featured-col">
+                    <img src="images/aeon.jpg">
+                    <h4>AEON Credit Service(M) Berhad</h4>
+                    <p>No. 8, Level 18, UOA Corporate Tower, Avenue 10, The Vertical Bangsar South City, Jalan Kerinchi, 59200 Kuala Lumpur</p>
+                    <a href="" class="apply-btn">Apply Jobs</a>
+                </div>
+            </div>
+        </section>
+        <!--END FEATURED EMPLOYERS-->
+        <!--ABOUT-->
+        <section class="about">
+            <div class="row">
+                <div class="about-col">
+                    <h4>COMPANY</h4><br>
+                    <a href="">About Us</a><br>
+                    <a href="">Contact Support</a><br>
+                    <a href="">Careers</a>
+                </div>
+                <div class="about-col">
+                    <h4>JOBSEEKER</h4><br>
+                    <a href="">Sing Up</a><br>
+                    <a href="">Sign In</a><br>
+                    <a href="">Check Application</a>
+                </div>
+                <div class="about-col">
+                    <h4>EMPLOYER</h4><br>
+                    <a href="">Create Account</a><br>
+                    <a href="">Post Jobs</a><br>
+                    <a href="">Contact Sales</a>
+                </div>
+                <div class="about-col">
+                    <h4>CONNECT WITH US</h4><br>
+                    <a href="">Facebook</a><br>
+                    <a href="">Twitter</a><br>
+                    <a href="">LinkedIn</a>
+                </div>
+            </div>
+            <!-- Page Footer -->
+            <div class="footer">
+                <p>&copy;2022 JobStore.com. All rights reserved</p>
+            </div>
+            <!-- End of Page Footer -->
+        </section>
+        <!--END ABOUT-->
+        <!--START JAVASCRIPT-->
+        <!--Javascript for toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <!--END JAVASCRIPT-->
+    </body>
+</html>

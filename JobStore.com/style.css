@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/jobstore_banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 80px;
+    height: 40px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(253, 131, 70);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid rgb(253, 131, 70);
+    padding: 12px 34px;
+    font-size: medium;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid rgb(253, 131, 70);
+    background: rgb(253, 131, 70);
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+.search input{
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+@media( max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(253, 131, 70);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .text-box{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 3px solid rgb(253, 131, 70);
+        padding: 12px 34px;
+        font-size: x-small;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    .hero-btn:hover{
+        border: 1px solid rgb(253, 131, 70);
+        background: rgb(253, 131, 70);
+        transition: 1s;
+    }
+    .search input{
+        width: 100%;
+        padding: 10px;
+        margin: 15px;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        background: #f0f0f0;
+    }
+}
+
+/*-------- Trending Jobs ---------*/
+
+.trending-jobs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.trending-col{
+    flex-basis: 30%;
+    border: 4px solid #dbe3f0;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.trending-col p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+.trending-col h4{
+    color: #000;
+    text-align: center;
+}
+.trending-col a{
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+}
+.trending-col:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.3);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/* End Trending Jobs */
+
+/* Featured Employers */
+
+.featured-emp{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* background-color: rgb(242, 224, 214); */
+}
+h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.featured-emp img{
+    width: 200px;
+    height: 80px;
+}
+.featured-col p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: left;
+}
+.featured-col{
+    flex-basis: 30%;
+    border: 4px solid rgb(253, 131, 70);
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.apply-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 3px solid rgb(253, 131, 70);
+    padding: 12px 34px;
+    font-size: medium;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.apply-btn:hover{
+    border: 1px solid rgb(253, 131, 70);
+    background: rgb(253, 131, 70);
+    color: #fff;
+    transition: 1s;
+}
+/* Featured Employers */
+
+/* About */
+.about{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.824),rgba(4, 9, 30, 0.824)), url(images/office.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.row{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.about-col h4{
+    color: #fff;
+    text-align: left;
+}
+.about-col a{
+    color: #fff;
+    font-size: small;
+    text-decoration: none;
+}
+/* End About */
+
+/* Footer */
+.footer{
+    text-align: center;
+    padding-top: 80px;
+}
+.footer p{
+    color: #fff;
+}
+/* End Footer */
